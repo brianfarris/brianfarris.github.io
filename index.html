@@ -19,9 +19,10 @@
         <![endif]-->
     </head>
     <style>
-        .bottom-three {
+      <!--  .bottom-three {
             margin-bottom: 3cm;
         }
+        --!>
     </style>
 
     <body data-spy="scroll" data-target="#navbar-example" data-offset="70" class="scrollspy-example">
@@ -132,11 +133,13 @@
                     $('#cvfile').load('resume.html');
                     var offset = 80;
 
-                    $('.navbar li a').click(function(event) {
+                    /*
+                       $('.navbar li a').click(function(event) {
                         event.preventDefault();
                         $($(this).attr('href'))[0].scrollIntoView();
                         scrollBy(0, -offset);
                         });
+                        */
                     });
                 </script>   
 
