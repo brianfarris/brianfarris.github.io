@@ -111,7 +111,6 @@
         <div class = "navbar navbar-default navbar-fixed-bottom">
 
             <div class = "container">
-                <p class = "navbar-text pull-left">Site Built By Brian Farris</p>
                 <a class="navbar-brand" href="#">Brian Farris</a>
                 <a class="navbar-brand" href="https://www.facebook.com/bfarris"><img src="/static/facebook.png" alt="Facebook" title="Facebook" /></a>
                 <a class="navbar-brand" href="https://plus.google.com/112060176977786480972"><img src="/static/googleplus.png" alt="Google+" title="Google+" /></a>
@@ -131,8 +130,15 @@
         <script type="text/javascript">
             $(document).ready(function(){
                     $('#cvfile').load('resume.html');
+                    var offset = 80;
+
+                    $('.navbar li a').click(function(event) {
+                        event.preventDefault();
+                        $($(this).attr('href'))[0].scrollIntoView();
+                        scrollBy(0, -offset);
+                        });
                     });
-</script>   
+                </script>   
 
             </body>
         </html>
