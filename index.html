@@ -11,35 +11,24 @@
         <!-- Custom styles for this template -->
         <link href="css/navbar-static-top.css" rel="stylesheet">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
     </head>
     <style>
-        section {
-        margin-top: 30px;
-}
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
-}
+        /* Customize container */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 730px;
+            }
+        }
+        .container-narrow > hr {
+            margin: 30px 0;
+        }
     </style>
 
     <body data-spy="scroll" data-target="#navbar-example" data-offset="70" class="scrollspy-example">
 
         <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="navbar-brand">
-        Brian Farris
-    </div>
         <div class="container">
+            <div class="navbar-brand">Brian Farris</div>            
             <div class="navbar-header">
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
                     <span class="sr-only">Toggle navigation</span>
@@ -52,7 +41,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#Me">About Me</a></li>
                     <li><a href="#Research">Research</a></li>
-                    <li><a href="#CV">CV</a></li>            
+                    <li><a href="#Publications">Publications</a></li>            
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#Webapps">Web Apps</a></li>
@@ -103,9 +92,17 @@
 
             <hr>
 
-            <h3 id="CV">CV: <a href="static/cv-farris.pdf">pdf available here.</a></h3>
-            <div id="cvfile"></div>
-
+            <h3 id="Publications">Publications</h3>
+            <ul>
+                <li>B. D. Farris, P. Duffell, Andrew I. MacFadyen, Z. Haiman, &#x27;Characteristic Signatures in the Thermal Emission from Accreting Binary BlackHoles&#x27;.arXiv:1406.0007 (2014)</li>
+                <li>P. C. Duffell, Z. Haiman, A. I. MacFadyen, D. J. D’Orazio, B. D. Farris, &#x27;Type II Migration is not Locked to Viscous Disk Evolution&#x27;. arXiv:1405.3711 (2014)</li>
+                <li>B. D. Farris, P. Duell, A. I. MacFadyen, and Z. Haiman, &#x27;Binary Black Hole Accretion From a Circumbinary Disk: Gas Dynamics Inside the Central Cavity&#x27;. ApJ, 783, 134 (2014)</li>
+                <li>B.D. Farris, R.G. Gold,V. Paschalidis and S.L. Shapiro, &#x27;Binary black hole mergers in magnetized disks: simulations in full general relativity&#x27;. Phys. Rev. Lett., 109, 221102 (2012)</li>
+                <li>A.N.Staley,T.W.Baumgarte,J.D.Brown, B.D.Farris, and S.L.Shapiro, &#x27;Oppenheimer-Snyder Collapse in Moving-Puncture Coordinates&#x27;. Clas- sical and Quantum Gravity, 29, 015003 (2012)</li>
+                <li>B.D. Farris, Y.T. Liu, and S.L. Shapiro, &#x27;Binary black hole mergers in gaseous environments: “Binary Bondi” and “binary Bondi-Hoyle- Lyttleton” accretion&#x27;. Phys. Rev. D., 81, 084008 (2010)</li>
+                <li>B.D. Farris, T.K. Li, Y.T. Liu, and S.L. Shapiro, &#x27;Relativistic Radiation Magnetohydrodynamics in Dynamical Spacetimes: Numerical Method and Tests&#x27;. Phys. Rev. D., 78, 024023 (2008)</li>
+            </ul>
+            <h3>CV: <a href="static/cv-farris.pdf">pdf available here.</a></h3>
             <hr>
 
             <h3 id="Webapps">Web Apps</h3>
@@ -139,16 +136,13 @@
         <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
-                    $('#cvfile').load('resume.html');
-                    //var offset = 80;
+                    var offset = 80;
 
-                    /*
-                       $('.navbar li a').click(function(event) {
+                    $('.navbar li a').click(function(event) {
                         event.preventDefault();
                         $($(this).attr('href'))[0].scrollIntoView();
                         scrollBy(0, -offset);
                         });
-                        */
                     });
                 </script>   
 
