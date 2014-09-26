@@ -1,4 +1,0 @@
-farriswebsite
-=============
-
-my personal website
