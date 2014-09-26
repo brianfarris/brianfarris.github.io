@@ -1,2 +1,5 @@
+name:           Website of Brian Farris
+description:    "The personal site of Brian Farris."
+url:            http://brianfarris.me
 gems:
   - jekyll-sitemap
