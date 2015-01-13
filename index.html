@@ -11,48 +11,46 @@
         <!-- Custom styles for this template -->
         <link href="css/navbar-static-top.css" rel="stylesheet">
 
-    </head>
-    <style>
-        /* Customize container */
-        @media (min-width: 768px) {
-            .container {
-                max-width: 730px;
-            }
-        }
-        .container-narrow > hr {
-            margin: 30px 0;
-        }
-        .researchitem {
-            margin: 1em 0;
-        }
-    </style>
+        </head>
+        <style>
+/* Customize container */
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+.container-narrow > hr {
+    margin: 30px 0;
+}
+.researchitem {
+    margin: 1em 0;
+}
+        </style>
 
-    <body data-spy="scroll" data-target="#navbar-example" data-offset="70" class="scrollspy-example">
+        <body data-spy="scroll" data-target="#navbar-example" data-offset="70" class="scrollspy-example">
 
         <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-brand">Brian Farris</div>            
-            <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+            <div class="container">
+                <div class="navbar-brand">Brian Farris</div>            
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#Me">About Me</a></li>
+                        <li><a href="#Research">Research</a></li>
+                        <li><a href="#Publications">Publications</a></li>            
+                        <li><a href="#DataScience">Data Science</a></li>                                
+                        <li><a href="#Webapps">Web Apps</a></li>
+                        <li><a href="#Personal">Personal</a></li>            
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
-                <ul class="nav navbar-nav">
-                    <li><a href="#Me">About Me</a></li>
-                    <li><a href="#Research">Research</a></li>
-                    <li><a href="#Publications">Publications</a></li>            
-                    <li><a href="#DataScience">Data Science</a></li>                                
-                    <li><a href="#Personal">Personal</a></li>            
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#Webapps">Web Apps</a></li>
-                </ul>
-            </div>
-        </div>
         </nav>
         <div class="container">
             <h2 id="Me">About Me</h2> 
@@ -69,6 +67,9 @@
             I am currently a theoretical astrophysicist, working as a postdoctoral researcher with <a href="http://user.astro.columbia.edu/~zoltan/">Zoltan Haiman</a> in the <a href="http://www.astro.columbia.edu/">astronomy department at Columbia University</a> and <a href="http://cosmo.nyu.edu/aim/">Andrew MacFadyen</a> at the <a href="http://cosmo.nyu.edu/">Center for Cosmology and Particle Physics at New York University</a>. My research focuses on electromagnetic signatures of accreting supermassive binary black holes.
             </p>
             <p>
+            In the past several years, I have been amazed to see how quickly things are changing in both astrophysics and industry as a result of the techniques of data science seeing increased use. I find this to be extremely exciting and I am looking forward to transitioning further into this domain in the near future.
+            </p>
+            <p>
             I can best be contacted at the following email address:
             <ul>
                 <li>
@@ -81,6 +82,18 @@
             <h2 id="Research">Research</h2>
 
             <img src="static/galaxies.jpg"  height="300" align="right" hspace="50" vspace="10">          
+            <h4>Supernovae</h4>
+            <ul>
+                <li class="researchitem">A supernova is the violent, explosive death of a star.</li>
+                <li class="researchitem">Such an explosion is so luminous that it can outshine the galaxy which hosts it.</li>
+                <li class="researchitem">Supernovae can be split into many subclasses, depending on the observational properties, which are in turn linked to the properties of the projenitor star.</li>
+                <li class="researchitem">One subclass is called Type 1A Supernovae. These are believed to be caused by explosions of white dwarfs.</li>
+                <li class="researchitem">Type 1A Supernovae are of particular interest because they can be used as "standard candles", which allow us to make simultaneous measurements of distance and redshift. These measurements are what led to the discovery that the universe is accelerating in it's expansion, presumably due to a "dark energy" which fills the universe.</li>
+                <li class="researchitem">In my research, supervised by <a href="http://en.wikipedia.org/wiki/Saul_Perlmutter">Saul Perlmutter</a> in the <a href="http://supernova.lbl.gov/">Supernova Cosmology Project</a> at Lawrence Berkeley National Lab, I worked on the discovery pipeline for the supernovae, which involves filtering through huge numbers of subtracted images of the sky, combing the data for changes in brightness over time which mark the presence of a supernova.
+                <li class="researchitem">I also worked on the processing of lightcurves, or plots of brightness vs. time in different frequency bands, for archived supernovae.
+                </li>
+            </ul>
+            <h4>Binary Black Holes</h4>
             <ul>
                 <li class="researchitem">It is currently believed that most, if not all galaxies have extremely massive (between a million and a billion times the mass of the sun) black holes at their centers. These are referred to as <a href="http://en.wikipedia.org/wiki/Supermassive_black_hole">Supermassive Black Holes</a>.</li>
                 <li class="researchitem">Galaxies are also known to merge with each other, combining to form a new galaxy which contains two very massive black holes.</li>
@@ -109,10 +122,34 @@
             <hr>
 
             <h2 id="DataScience">Data Science</h2>
-            <h4>digit classification: <a href="static/digit_recognizer.html">Handwritten Digit Classification</a></h4>
-            
+            <p>Living in New York City, I am fortunate to be surrounded by an extremely vibrant data science community, which I found myself getting sucked into when I moved here 3 years ago. In addition to seeing the growing influence of Big Data techniques in the astrophysics departments at Columbia and NYU, I have been able to take advantage of the community of data scientists outside academia in the city by attending meetups.</p> 
+
+            <p>Additionally, last spring I was able to take part in a reading group at Columbia for the book, <a href="http://amzn.com/0691151687">Statistics, Data Mining, and Machine Learning in Astronomy: A Practical Python Guide for the Analysis of Survey Data</a>, which I highly recommend for any other astrophysicists who are interested in learning more about data science. It is a very clear and well organized book which is extremely Python-centric and emphasizes practical examples.
+
+            <p>I have also learned a lot from courses I have taken at <a href="https://www.coursera.orgi">Coursera</a>. In particular, I highly recommend their <a href="https://www.coursera.org/specialization/jhudatascience/1?utm_medium=listingPage">Data Science Specialization series of courses</a>, as well as the <a href="https://www.coursera.org/course/ml">Stanford Machine Learning course</a> and the <a href="https://class.coursera.org/db">Stanford Introduction to Databases</a>. You can see a list of all of the Coursera courses I have taken on my <a href="https://www.coursera.org/user/i/483499292161b681833a2eaa16cf2780">profile page</a>.</p>
+            <h3>Fun Data Projects</h3>
+            <h4><a href="static/citibike.html">Exploring Citibike Data</a></h4>
+            Citibike is a bike sharing program in New York City. Each time a bike is checked out of a kiosk and returned, data about the trip and the user is recorded and made public. This is a massive dataset that I thought would be fun to play around with a bit and see what pops out.
+            <h4><a href="static/digit_recognizer.html">Handwritten Digit Classification</a></h4> 
+            Inspired by the list of practice competitions on <a href="http://www.kaggle.com/>Kaggle">Kaggle</a>, I decided to use the MNIST database of handwritten digits as an opportunity to play around with a few different machine learning classification algorithms. It's a great dataset to play around with because it's so well studied and it is possible to compare a lot of different algorithms relatively easily and get rather impressive results. See link above for details.
+            <h4><a href="static/weight_lifting.html">Exercise Classification Based on Accelerometer Data</a></h4>
+            I originally worked on this study for a course project in the Coursera practical machine learning course. I was required to perform the analysis in R for the course. I have nothing against R at all, but I prefer to do everything in Python these days. I had a lot of fun with this dataset, so I thought it would be worthwhile to redo it in Python using pandas to handle the data cleaning and scikit-learn for the random forest implementation. 
+            <hr>
+
+            <h2 id="Webapps">Web Apps</h2>
+            <div class="bottom-three">
+                <p>
+                As a hobby, I have been teaching myself how to write <a href="https://www.python.org/">Python</a> web apps using the <a href="http://flask.pocoo.org/">Flask</a> web framework, and <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, and deploying them on <a href="https://www.heroku.com/">Heroku</a>. Here are a couple of examples:
+                <h4><a href = "http://flog.brianfarris.me/" color="red">FLOG</a>: brian <font color="red">F</font>arris's <font color="red">LOG</font>ging app.</h4>
+                A nice app for keeping lists, journals, and logging activities. It uses <a href="https://developers.google.com/+/features/sign-in">Google+ Sign-in</a> for authentication. Eventually, I would like to add analysis to monitor progress, etc. For now the only thing it does is make goofy word clouds from text entries.
+                <h4><a href = "http://feather.brianfarris.me/" color="red">FEATHER</a>: brian <font color="red">F</font>arris's w<font color="red">EATHER</font> app.</h4>
+                A very simple weather app that automatically figures out where you are and gives you the current conditions and the hourly conditions for the next week. It uses the <a href="http://www.wunderground.com/weather/api/">Weather Underground API</a>. 
+                </p>
+            </div>
+            <hr>
+
             <h2 id="Personal">Personal</h2>
-                
+
             <h4>Photography</h4>
 
             <p>
@@ -371,16 +408,6 @@
                 </div>
                 <hr>
 
-                <h2 id="Webapps">Web Apps</h2>
-                <div class="bottom-three">
-                    <p>
-                    As a hobby, I have been teaching myself how to write <a href="https://www.python.org/">Python</a> web apps using the <a href="http://flask.pocoo.org/">Flask</a> web framework, and <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, and deploying them on <a href="https://www.heroku.com/">Heroku</a>. Here are a couple of examples:
-                    <h4><a href = "http://flog.brianfarris.me/" color="red">FLOG</a>: brian <font color="red">F</font>arris's <font color="red">LOG</font>ging app.</h4>
-                    A nice app for keeping lists, journals, and logging activities. It uses <a href="https://developers.google.com/+/features/sign-in">Google+ Sign-in</a> for authentication. Eventually, I would like to add analysis to monitor progress, etc. For now the only thing it does is make goofy word clouds from text entries.
-                    <h4><a href = "http://feather.brianfarris.me/" color="red">FEATHER</a>: brian <font color="red">F</font>arris's w<font color="red">EATHER</font> app.</h4>
-                    A very simple weather app that automatically figures out where you are and gives you the current conditions and the hourly conditions for the next week. It uses the <a href="http://www.wunderground.com/weather/api/">Weather Underground API</a>. 
-                    </p>
-                </div>
             </div>
             <div class = "navbar navbar-default navbar-fixed-bottom">
 
